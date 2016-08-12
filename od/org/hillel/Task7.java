@@ -5,12 +5,17 @@ package od.org.hillel;
 Причем, если съемщик прожил в ней больше 5 дней, он получит скидку 20 грн, а если больше 7 дней, то скидка составит 50 грн.
 */
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 public class Task7 {
 
     public static void main(String[] args) {
 
+        BufferedReader set = new BufferedReader(new InputStreamReader(System.in));
+
         final int price = 40;
-        int days = 6 ;
+        int days = 6;
         int discont20 = 20;
         int discont50 = 50;
 
@@ -24,7 +29,7 @@ public class Task7 {
             System.out.println(" Ваш счет за проживание составляет : " + bill + " грн " + " вы экономите " + discont20 + " грн ");
         } else {
 
-            System.out.println(" Ваш счет за проживание составляет : " + bill + " грн " );
+            System.out.println(" Ваш счет за проживание составляет : " + bill + " грн ");
         }
     }
 }
